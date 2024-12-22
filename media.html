@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Media</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="contact"><h2 style="font-family: 'Outfit', Arial; color: white;">Emergency : (000)XXXXXX</h2></div>
+        </div>
+        <div class="bot-header">
+            <div class="logo">
+                <img src="ico/logo-gomed-1.svg">
+            </div>
+            <div class="navbar">
+                <ul class="navcontent">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="services.html">Layanan</a></li>
+                    <li><a href="scadule.html">Jadwal</a></li>
+                    <li><a href="registration.html">Pendaftaran</a></li>
+                    <li><a href="media.html"style="border-bottom: red solid; color: red;">Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="title">
+        <div class="title1">BERITA & ARTIKEL</div>
+    </div>
+    <div class="pagination">
+        <button id="prev-btn" onclick="changePage(-1)">Prev</button>
+        <span id="page-indicators"></span>
+        <button id="next-btn" onclick="changePage(1)">Next</button>
+    </div>
+    <!--Page 1-->
+    <div class="media-box" id="media-page-1">
+        <div class="media-card">
+            <div class="media-img">
+                <img src="img/image1.webp">
+            </div>
+            <h3>Open Recruitment Dentist Klinik GoMed Periode 2025</h3>
+            <p>Klinik GoMed membuka kesempatan bagi profesional muda untuk bergabung sebagai Dokter Gigi. 
+                Periode pendaftaran dibuka hingga akhir bulan Januari 2025. Segera daftarkan diri Anda dan jadilah bagian dari tim kami!</p>
+            <div class="media-button"><button>Selengkapnya</button></div>
+        </div>
+        <div class="media-card">
+            <div class="media-img">
+                <img src="img/image2.jpg">
+            </div>
+            <h3>Penggunaan AI Dalam Deteksi Kanker Otak</h3>
+            <p>Temukan bagaimana algoritma AI cerdas membantu menganalisis MRI, mendeteksi kanker otak sejak dini,
+                dan memberikan solusi pengobatan yang lebih akurat. Yuk, baca selengkapnya dan temukan inovasi medis terkini!"
+            </p>
+            <div class="media-button"><button>Selengkapnya</button></div>
+        </div>
+        <div class="media-card">
+            <div class="media-img">
+                <img src="img/image3.jpg">
+            </div>
+            <h3>Kiat Menjaga Kesehatan Liver bagi Remaja</h3>
+            <p>Tahukah kamu? Liver yang sehat adalah kunci tubuh bertenaga dan bebas penyakit! Ingin tahu cara mudah menjaga
+            liver tetap optimal dengan gaya hidup remaja? Yuk, baca artikel ini dan temukan tips sederhana untuk kesehatan jangka panjang! </p>
+            <div class="media-button"><button>Selengkapnya</button></div>
+        </div>
+    </div>
+    <!--Page 2-->
+    <div class="media-box" id="media-page-2" style="display: none;">
+        <div class="media-card">
+            <div class="media-img">
+                <img src="img/natal.webp">
+            </div>
+            <h3>Selamat Natal dan Tahun Baru 2025</h3>
+            <p>Semoga damai, sukacita, dan kebahagiaan Natal menyertai Anda dan keluarga. Sambutlah tahun 2025 dengan harapan baru
+                dan keberkahan yang melimpah. GoMed memberikan layanan Medical Checkup gratis selama periode natal ! </p>
+            <div class="media-button"><button>Selengkapnya</button></div>
+        </div>
+        <div class="media-card">
+            <div class="media-img">
+                <img src="img/seminar.jpg">
+            </div>
+            <h3>Seminar Anti Narkotika Klinik GoMed</h3>
+            <p>Klinik GoMed mengundang Anda untuk ikut serta dalam Seminar Anti-Narkoba yang penuh inspirasi. Dapatkan edukasi mendalam, 
+                tips pencegahan, dan cerita inspiratif untuk membangun masa depan bebas narkoba. Baca selengkapnya! </p>
+            <div class="media-button"><button>Selengkapnya</button></div>
+        </div>
+        <div class="media-card">
+            <div class="media-img">
+                <img src="img/image2.jpg">
+            </div>
+            <h3>Penggunaan AI Dalam Deteksi Kanker Otak</h3>
+            <p>"Temukan bagaimana algoritma AI cerdas membantu menganalisis MRI, mendeteksi kanker otak sejak dini,
+                dan memberikan solusi pengobatan yang lebih akurat. Yuk, baca selengkapnya dan temukan inovasi medis terkini!"</p>
+            <div class="media-button"><button>Selengkapnya</button></div>
+        </div>
+    </div>
+    <!--Page 3-->
+    <div class="media-box" id="media-page-3" style="display: none; justify-content: space-evenly;">
+        <div class="media-card">
+            <div class="media-img">
+                <img src="img/image3.jpg">
+            </div>
+            <h3>Penggunaan AI Dalam Deteksi Kanker Otak</h3>
+            <p>"Temukan bagaimana algoritma AI cerdas membantu menganalisis MRI, mendeteksi kanker otak sejak dini,
+                dan memberikan solusi pengobatan yang lebih akurat. Yuk, baca selengkapnya dan temukan inovasi medis terkini!"</p>
+            <div class="media-button"><button>Selengkapnya</button></div>
+        </div>
+        <div class="media-card">
+            <div class="media-img">
+                <img src="img/image2.jpg">
+            </div>
+            <h3>Penggunaan AI Dalam Deteksi Kanker Otak</h3>
+            <p>"Temukan bagaimana algoritma AI cerdas membantu menganalisis MRI, mendeteksi kanker otak sejak dini,
+                dan memberikan solusi pengobatan yang lebih akurat. Yuk, baca selengkapnya dan temukan inovasi medis terkini!"</p>
+            <div class="media-button"><button>Selengkapnya</button></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-child">
+            <div class="addres-call">
+                <div class="addres">
+                    <h3>ALAMAT</h3>
+                    <div style="padding-top: 1rem; font-size: 16px;">
+                        <p>Jl. Unnamed Road No.1, Semolowaru, Kec. Sukolilo, 
+                            Surabaya, Jawa Timur 60119</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shortcut">
+                <div class="services">
+                    <h3>LAYANAN</h3>
+                    <div class="list">
+                        <ul>
+                            <li>Konsultasi Umum</li>
+                            <li>Konsultasi Psikologi</li>
+                            <li>Medical Checkup</li>
+                            <li>Rawat Jalan</li>
+                            <li>Ambulans</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Information">
+                    <h3>INFORMASI</h3>
+                    <div class="list">
+                        <ul>
+                            <li><a href="index.html">Beranda</a></li>
+                            <li><a href="about.html">Tentang Kami</a></li>
+                            <li><a href="scadule.html">Jadwal</a></li>
+                            <li><a href="registration.html">Pendaftaran</a></li>
+                            <li><a href="media.html">Berita & Artikel</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>FOLLOW KAMI</h3>
+                    <div class="list">
+                        <ul>
+                            <li><a><img src="ico/instagram-logo.svg"></a></li>
+                            <li><a><img src="ico/x-logo.svg"></a></li>
+                            <li><a><img src="ico/facebook-logo.svg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

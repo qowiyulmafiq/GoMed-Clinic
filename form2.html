@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form BPJS</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="contact"><h2 style="font-family: 'Outfit', Arial; color: white;">Emergency : (000)XXXXXX</h2></div>
+        </div>
+        <div class="bot-header">
+            <div class="logo">
+                <img src="ico/logo-gomed-1.svg">
+            </div>
+            <div class="navbar">
+                <ul class="navcontent">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="services.html">Layanan</a></li>
+                    <li><a href="scadule.html">Jadwal</a></li>
+                    <li><a href="registration.html" style="border-bottom: red solid; color: red;">Pendaftaran</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="form">
+        <div class="title" style="margin: 0rem 0rem; padding-top: 4rem ;">
+            <div class="title1">PENDAFTARAN PASIEN</div>
+        </div>
+        <div class="form-card">
+            <form>
+                <!-- Jenis Pasien -->
+                <div class="form-group">
+                    <label for="jenis-pasien">Jenis Pasien</label>
+                    <select id="jenis-pasien" name="jenis-pasien" required>
+                        <option value="">Pilih Jenis Pasien</option>
+                        <option value="baru">Pasien Baru</option>
+                        <option value="lama">Pasien Lama</option>
+                    </select>
+                </div>
+
+                <!-- Rekam Medis (Tersembunyi secara default) -->
+                <div class="form-group hidden" id="rekam-medis-group">
+                    <label for="rekam-medis">Nomor Rekam Medis</label>
+                    <input type="text" id="rekam-medis" name="rekam-medis" placeholder="Masukkan nomor rekam medis">
+                </div>
+
+                <!-- Form Pasien Baru (Tersembunyi jika pasien lama) -->
+                <div id="form-pasien-baru">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal-lahir">Tanggal Lahir</label>
+                        <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nik">Nomor NIK/KTP</label>
+                        <input type="number" id="nik" name="nik" required placeholder="Masukkan NIK/KTP" maxlength="16">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nik">Nomor BPJS</label>
+                        <input type="number" id="nik" name="nik" required placeholder="Masukkan BPJS" maxlength="16">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis-kelamin">Jenis Kelamin</label>
+                        <select id="jenis-kelamin" name="jenis-kelamin" required>
+                            <option value="">Pilih Jenis Kelamin</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pekerjaan">Pekerjaan</label>
+                        <select id="pekerjaan" name="pekerjaan" required>
+                            <option value="">Pilih Pekerjaan</option>
+                            <option value="Dokter">Dokter</option>
+                            <option value="Perawat">Perawat</option>
+                            <option value="Guru">Guru</option>
+                            <option value="Pelajar/Mahasiswa">Pelajar/Mahasiswa</option>
+                            <option value="Wiraswasta">Wiraswasta</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon</label>
+                        <input type="tel" id="telepon" name="telepon" required placeholder="Masukkan nomor telepon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alamat">Alamat</label>
+                        <textarea id="alamat" name="alamat" required placeholder="Masukkan alamat lengkap (SESUAI KTP)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="layanan">layanan</label>
+                        <select id="layanan" name="Layanan" required>
+                            <option value="">--Pilih Layanan--</option>
+                            <option value="Umum">Poliklinik Umum</option>
+                            <option value="Gigi">Poliklinik Gigi</option>
+                            <option value="Anak">Poliklinik Anak</option>
+                            <option value="Kebidanan & Kandungan">Poliklinik Kebidanan & Kandungan</option>
+                            <option value="Konsultasi Psikologi">Konsultasi Psikologi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jadwal">Tanggal & Waktu</label>
+                        <input type="datetime-local" id="jadwal" name="jadwal" required>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <div class="button-form">
+                        <button type="button" onclick="window.location.href='registration.html'">Kembali</button>
+                        <button type="submit">Daftar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

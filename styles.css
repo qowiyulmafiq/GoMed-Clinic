@@ -1,0 +1,831 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html body{
+    overflow-x: hidden;
+}
+header {
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+/*Header*/
+.top-header{
+    background-color: #ff0004;
+    height: 4rem;
+}
+.contact{
+    padding: 1rem 2rem;
+}
+.bot-header{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 2rem;
+    height: auto;
+    background-color: white;
+}
+.bot-header .logo img{
+    width: 120px; 
+    height: auto;
+    padding: 2px 0px;
+}
+
+/*Navbar content*/
+.navbar{
+    display: flex;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 42px;    
+    cursor: pointer;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding-bottom: 6px;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover{
+    color: #ff0004;
+}
+
+/*Body*/
+/*Button*/
+.button1{
+    background-color: #ff0004;
+    color: white; 
+    font-size: 18px; 
+    font-weight: 500; 
+    padding: 10px 40px;
+    border: none; 
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+    cursor: pointer; 
+    transition: transform 0.3s ease, box-shadow 0.2s ease; 
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+.button1:hover{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.0);
+    background-color: #f6080c;
+    color: rgb(234, 232, 232);
+}
+
+/*Home*/
+/*Salutation*/
+.welcome{
+    display: flex;
+    margin: 6rem 8rem;
+    flex-direction: column;
+    width: 45rem;
+    gap: 4rem;
+}
+
+/*Judul*/
+.title{
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    margin-top: 6rem;
+}
+.title .title1{
+    background-color: #ff0004; 
+    text-align: center; 
+    font-size: 32px; 
+    font-weight: 600; 
+    color: white; 
+    border-radius: 18px; 
+    display: flex;
+    padding: 1rem 1rem; 
+    align-items: center; 
+    justify-content: center;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Fitur Unggulan*/
+.unggulan{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.box-layanan{
+    display: flex;
+    margin: 0rem 10rem;
+    height: auto;
+    justify-content: space-between;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif; 
+    font-weight: 500; 
+    font-size: 18px;
+    text-align: center;
+}
+.box-layanan .layanan-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 30px;
+    height: 300px;
+    gap: 6px;
+    border: rgba(0, 0, 0, 0.16);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.layanan1 .ico-layanan img{
+    height: auto;
+}
+
+/*Berita & Artikel*/
+.berita-artikel{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/dot2.svg);
+    background-size: cover;
+}
+.box-berita{
+    display: flex;
+    margin: 0rem 10rem;
+    height: auto;
+    justify-content: space-between;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
+.box-berita .berita-1{
+    display: flex;
+    background-color: white;
+    border: rgba(0, 0, 0, 0.16) 1px solid;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: 315px;
+    height: 425px;
+    border-radius: 31px;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.berita-1 .card-img img{
+    align-items: center;
+    height: 250px;
+    width: 240px;
+    margin: 0rem 2rem;
+    margin-top: 2rem; 
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 13px;
+    border: rgba(0, 0, 0, 0.211) 1px solid;
+}
+.berita-1 .card-title{
+    margin: 0rem 2rem;
+    text-align: justify;
+}
+
+.berita-1 .card-button{
+    display: flex;
+    margin: 0rem 2rem;
+    justify-content: end;
+}
+.berita-1 .card-button button{
+    background-color: #ff0004;
+    color: white; 
+    font-size: 15px; 
+    padding: 6px 8px;
+    font-weight: 500; 
+    border: none; 
+    border-radius: 13px;
+    cursor: pointer; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+/*Footer*/
+footer{
+    background-image: url(img/batik.png);
+    background-repeat: repeat;
+    background-size: cover;
+    height: auto;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+}
+
+.footer-child{
+    display: flex;
+    justify-content: space-between;
+    padding: 12rem 8rem;
+}
+
+.addres{
+    width: 25rem;
+    height: auto;
+}
+
+.shortcut{
+    display: flex;
+    gap: 5rem;
+}
+
+.list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.list ul li a{
+    text-decoration: none;
+    padding-bottom: 6px;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.list ul li a:hover{
+    color: #FF0004;
+}
+/*Home*/
+
+/*Tentang*/
+.about-clinic{
+    height: 30rem;
+}
+.about-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 8rem;
+}
+.about-box .about-description{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    gap: 3rem;
+}
+.about-description p{
+    width: 42rem;
+    text-align: justify;
+}
+.about-description .about-element{
+    display: flex;
+    border-radius: 12px;
+    background-color: #FFB200;
+    width: 65rem;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.down{
+    display: flex;
+    padding: 2rem 2rem;
+    gap: 10px;
+    align-items: center;
+}
+.about-box .about-pict{
+    position: absolute;
+    left: 60rem;
+    z-index: 2;
+}
+.about-box .about-pict img{
+    width: 320px;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+/*visi-misi*/
+.vm-clinic{
+    height: 30rem;
+    background-image: url(img/dot2.svg);
+    background-size: cover;
+}
+.vm-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 12rem;
+}
+.vm-box .vm-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #FF0004;
+    border-radius: 16px;
+    width: 445px;
+    height: 370px;
+    background-image: url(img/batik.png);
+    box-shadow: 10px 10px 4px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out;
+}
+
+.vm-card:hover{
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+}
+
+.vm-title{
+    display: flex;
+    
+}
+.vm-title p{
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.132);
+    height: auto;
+    margin: 2rem;
+    padding: 10px;
+}
+
+.vm{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.132);
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    height: auto;
+    margin: 0rem 2rem;
+    padding: 1rem 1rem;
+    text-align: justify;
+}
+.vm ul{
+    padding-left: 10px;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+}
+.vm ul li{
+    padding-bottom: 4px;
+}
+
+/*Halaman Layanan*/
+
+.services-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 8rem;
+    height: auto;
+    gap: 6rem;
+}
+
+.services-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    width: 45rem;
+    height: auto;
+    background-color: red;
+    background-image: url(img/batik.png);
+    gap: 8px;
+    box-shadow: 10px 10px 6px 3px rgba(0, 0, 0, 0.104);
+}
+
+.services-pict{
+    display: flex;
+    align-items: center;
+    padding: 0rem 2rem;
+    padding-top: 2rem;
+    border-radius: 16px;
+}
+.services-pict img{
+    border-radius: 16px;
+    object-fit: cover;
+    align-items: center;
+    width: 655px;
+    height: 430px;
+}
+.services-desc{
+    gap: 6px;
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/*Halaman Pendaftaran*/
+.regist{
+    height: auto;
+}
+
+.regist-box{
+    display: flex;
+    margin: 4rem 8rem;
+    border: rgba(0, 0, 0, 0.271) solid 1px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+    height: 30rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.regist-box .regist-card{
+    background-color: #FF0004;
+    border-radius: 10px;
+    width: 20rem;
+    height: 10rem;
+    position: relative;
+    background-image: url(img/batik.png);
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.regist-card .regist-body{
+    display: flex;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    align-items: center;
+    color: white;
+    padding: 2rem 2rem;
+    height: 10rem;
+    text-decoration: none;
+}
+
+.regist-body p{
+    width: 10rem;
+}
+
+.regist-icon{
+    display: flex;
+    align-items: center;
+}
+
+.regist-icon img{
+    object-fit: cover;
+    align-items: center;
+    width: 80px;
+    height: auto;
+}
+
+.regist-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/*Form Regist*/
+.form{
+    height: 70rem;
+    background-image: url(img/batik.png);
+    background-repeat: repeat;
+}
+.form-card{
+    margin:6rem 20rem;
+    border: red solid 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.form-card form{
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 3rem;
+    width: 100rem; 
+}
+
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #333;
+    margin-right: 10px;
+    width: 160px; 
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex-grow: 1;
+    max-width: 350px; 
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: none;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+}
+.form-group .button-form a{
+    background-color: #ff0000;
+    color: white;
+    padding: 11px 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+}
+.button-form{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 3rem;
+}
+.form-group .button-form button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-group button:hover {
+    background-color: #c60101;
+}
+.form-group a:hover {
+    background-color: #c60101;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Halaman Media*/
+.media-box{
+    height: auto;
+    margin: 5rem 14rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.media-card{
+    border: rgba(0, 0, 0, 0.160) solid 2px;
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    height: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.media-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-img img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    width: 280px;
+    margin-top: 1rem; 
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.media-card h3{
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+    margin: 1rem 1rem;
+}
+
+.media-card p{
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+    margin: 0rem 1rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.media-card .media-button{
+    display: flex;
+    margin: 1rem 1rem;
+    justify-content: flex-end;
+}
+
+.media-button button{
+    background-color: #ff0004;
+    color: white; 
+    font-size: 15px; 
+    padding: 6px 8px;
+    font-weight: 500; 
+    border: none; 
+    border-radius: 8px;
+    cursor: pointer; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+.media-button button:hover{
+    background-color: #c60101;
+}
+
+.pagination {
+    display: flex;
+    margin: 0rem 13rem;
+    text-align:left;
+    padding: 10px;
+}
+.pagination button{
+    background-color: #ff0004;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+.pagination button:hover {
+    background-color: #e63939;
+}
+.pagination .active {
+    background-color: #d00000;
+    cursor: default;
+}
+
+/*Halaman Jdawl*/
+.scadule-box{
+    height: auto;
+}
+
+.scadule-src{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0.160) 1px solid;
+    margin: 4rem 10rem;
+    height: auto;
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+}
+
+.scadule-src h1{
+    padding: 2rem 2rem;
+}
+.scadule-src p{
+    padding: 1rem 2rem;
+}
+.scadule-src .doct-name{
+    margin: 0rem 2rem;
+    padding: 14px;
+    border-radius: 10px;
+}
+.doct-spec{
+    display: flex;
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+}
+.doct-spec .selection select{
+    padding: 14px;
+    border-radius: 10px;
+}
+.find{
+    display: flex;
+    align-items:end;
+}
+.find button{
+    height: 46px;
+    width: 10rem;
+    background-color: #FF0004;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.find button:hover{
+    background-color: #c60101;
+}
+
+.jadwal-dokter {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    display: none;
+}
+
+.table-hasil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 10rem;
+}
+.scadule-src table {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: center;
+}
+.scadule-src table th, table td {
+    border: 1px solid #bab9b9;
+    padding: 10px;
+    text-align: center;
+}
+.scadule-src table th {
+    background-color: #FF0004;
+    color: white;
+    background-image: url(img/batik.png);
+}
+
+/*Informasi Pendaftaran*/
+.info-regist{
+    height: 50rem;
+    background-image: url(img/batik.png);
+    background-repeat: repeat;
+}
+
+.info-card{
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 8rem auto;
+    margin-top: 4rem;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+.info-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-card ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.info-card ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 12px; /* Updated gap between list items */
+}
+
+.info-card ul li b {
+    color: #333;
+}
+
+.highlight {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.info-card ol {
+    counter-reset: item;
+    padding-left: 20px;
+}
+
+.info-card ol > li {
+    counter-increment: item;
+    margin-bottom: 12px; /* Updated gap between list items */
+}
+
+.button-info{
+    display: flex;
+    gap: 20px;
+    padding-top: 2rem;
+}
+
+.button-info button{
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+}
+
+.button-info button:hover {
+    background-color: #c60101;
+}
